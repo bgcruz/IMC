@@ -1,0 +1,7 @@
+body {
+    padding: 20px;
+}
+.calculator {
+    max-width: 600px;
+    margin: auto;
+}
