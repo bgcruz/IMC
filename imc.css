@@ -1,7 +1,38 @@
 body {
     padding: 20px;
+    background-color: rgb(10, 230, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(29, 136,207), rgb(110, 25, 143));
+    text-align:center; 
+    color: #fff;
 }
 .calculator {
     max-width: 600px;
     margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);    
+    
+    
+    
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+     
+
+

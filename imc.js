@@ -1,16 +1,16 @@
 function calculatePlan() {
-    // Obter os valores inseridos pelo usuário
-    var age = parseInt(document.getElementById('age').value);
-    var weight = parseInt(document.getElementById('weight').value);
-    var height = parseInt(document.getElementById('height').value);
+    
+    var idade = parseInt(document.getElementById('idade').value);
+    var peso = parseInt(document.getElementById('peso').value);
+    var altura = parseInt(document.getElementById('altura').value);
 
-    // Calcular o IMC
-    var bmi = weight / Math.pow(height / 100, 2);
+    
+    var bmi = peso / Math.pow(altura / 100, 2);
 
-    // Lógica de cálculo dos planos A e B
-    var planA_basic = 100 + (age * 10 * (bmi / 10));
-    var planA_standard = (150 + (age * 15)) * (bmi / 10);
-    var planA_premium = (200 - (bmi * 10) + (age * 20)) * (bmi / 10);
+    
+    var planA_basic = 100 + (idade * 10 * (bmi / 10));
+    var planA_standard = (150 + (idade * 15)) * (bmi / 10);
+    var planA_premium = (200 - (bmi * 10) + (idade * 20)) * (bmi / 10);
 
     var comorbidityFactor;
     if (bmi < 18.5) {
@@ -31,7 +31,7 @@ function calculatePlan() {
     var planB_standard = (150 + (comorbidityFactor * 15)) * (bmi / 10);
     var planB_premium = (200 - (bmi * 10) + (comorbidityFactor * 20)) * (bmi / 10);
 
-    // Exibir o resultado na tabela
+    
     var resultTable = document.getElementById('resultTable');
     resultTable.innerHTML = `
         <table class="table">
