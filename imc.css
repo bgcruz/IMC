@@ -10,10 +10,7 @@ body {
     max-width: 600px;
     margin: auto;
     color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.1);    
-    
-    
-    
+    background-color: rgba(0, 0, 0, 0.1);        
 }
 .container {
     width: 80%;
@@ -33,6 +30,3 @@ body {
         width: 100%;
     }
 }
-     
-
-
